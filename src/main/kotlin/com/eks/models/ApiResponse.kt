@@ -1,4 +1,4 @@
-package com.example.models
+package com.eks.models
 
 import kotlinx.serialization.Serializable
 
@@ -9,4 +9,5 @@ data class ApiResponse(
     val prevPage: Int? = null,
     val nextPage: Int? = null,
     val players: List<Player> = emptyList(),
+    val lastUpdated: Long? = null
 )

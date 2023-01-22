@@ -1,7 +1,7 @@
-package com.example.repository
+package com.eks.repository
 
-import com.example.models.ApiResponse
-import com.example.models.Player
+import com.eks.models.ApiResponse
+import com.eks.models.Player
 
 
 const val NEXT_PAGE_KEY = "nextPage"
@@ -352,6 +352,7 @@ class PlayerRepositoryImpl : PlayerRepository {
             prevPage = calculatePage(page = page)[PREVIOUS_PAGE_KEY],
             nextPage = calculatePage(page = page)[NEXT_PAGE_KEY],
             players = players[page]!!,
+            lastUpdated = System.currentTimeMillis()
         )
     }
 

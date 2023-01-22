@@ -1,6 +1,6 @@
-package com.example.routes
+package com.eks.routes
 
-import com.example.repository.PlayerRepository
+import com.eks.repository.PlayerRepository
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*

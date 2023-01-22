@@ -1,6 +1,6 @@
-package com.example.plugins
+package com.eks.plugins
 
-import com.example.routes.*
+import com.eks.routes.*
 import io.ktor.server.routing.*
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*

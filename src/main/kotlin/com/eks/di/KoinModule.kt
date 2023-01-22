@@ -1,7 +1,7 @@
-package com.example.di
+package com.eks.di
 
-import com.example.repository.PlayerRepository
-import com.example.repository.PlayerRepositoryImpl
+import com.eks.repository.PlayerRepository
+import com.eks.repository.PlayerRepositoryImpl
 import org.koin.dsl.module
 
 val koinModule = module {

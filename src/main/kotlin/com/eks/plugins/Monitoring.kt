@@ -1,8 +1,6 @@
-package com.example.plugins
+package com.eks.plugins
 
 import io.ktor.server.plugins.callloging.*
-import org.slf4j.event.*
-import io.ktor.server.request.*
 import io.ktor.server.application.*
 
 fun Application.configureMonitoring() {

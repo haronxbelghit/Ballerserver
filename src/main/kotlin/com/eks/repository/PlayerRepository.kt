@@ -1,7 +1,7 @@
-package com.example.repository
+package com.eks.repository
 
-import com.example.models.ApiResponse
-import com.example.models.Player
+import com.eks.models.ApiResponse
+import com.eks.models.Player
 
 interface PlayerRepository {
 
