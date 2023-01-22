@@ -9,6 +9,7 @@ fun Application.configureRouting() {
     routing {
         root()
         getAllPlayers()
+        searchPlayers()
         static("/images") {
             resources("images")
         }

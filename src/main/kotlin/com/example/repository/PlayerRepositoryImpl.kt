@@ -272,8 +272,8 @@ class PlayerRepositoryImpl : PlayerRepository {
             power = 85,
             month = "january",
             day = "10",
-            squad = listOf("Moroccan national team","Chelsea"),
-            abilities = listOf("dribbling","passing","vision","free kick"),
+            squad = listOf("Moroccan national team", "Chelsea"),
+            abilities = listOf("dribbling", "passing", "vision", "free kick"),
             playerTypes = listOf("Midfielder")
         ),
         Player(
@@ -285,8 +285,8 @@ class PlayerRepositoryImpl : PlayerRepository {
             power = 80,
             month = "february",
             day = "20",
-            squad = listOf("Moroccan national team","Sevilla"),
-            abilities = listOf("finishing","dribbling","speed","off the ball movement"),
+            squad = listOf("Moroccan national team", "Sevilla"),
+            abilities = listOf("finishing", "dribbling", "speed", "off the ball movement"),
             playerTypes = listOf("Forward")
         ),
         Player(
@@ -298,8 +298,8 @@ class PlayerRepositoryImpl : PlayerRepository {
             power = 80,
             month = "march",
             day = "5",
-            squad = listOf("Moroccan national team","Angers"),
-            abilities = listOf("finishing","dribbling","speed","off the ball movement"),
+            squad = listOf("Moroccan national team", "Angers"),
+            abilities = listOf("finishing", "dribbling", "speed", "off the ball movement"),
             playerTypes = listOf("Forward")
         )
     )
@@ -313,8 +313,8 @@ class PlayerRepositoryImpl : PlayerRepository {
             power = 75,
             month = "april",
             day = "10",
-            squad = listOf("Moroccan national team","Toulouse"),
-            abilities = listOf("finishing","dribbling","speed","off the ball movement"),
+            squad = listOf("Moroccan national team", "Toulouse"),
+            abilities = listOf("finishing", "dribbling", "speed", "off the ball movement"),
             playerTypes = listOf("Forward")
         ),
         Player(
@@ -326,8 +326,8 @@ class PlayerRepositoryImpl : PlayerRepository {
             power = 75,
             month = "may",
             day = "15",
-            squad = listOf("Moroccan national team","Osasuna"),
-            abilities = listOf("marking","heading","communication","positioning"),
+            squad = listOf("Moroccan national team", "Osasuna"),
+            abilities = listOf("marking", "heading", "communication", "positioning"),
             playerTypes = listOf("Defender")
         ),
         Player(
@@ -339,8 +339,8 @@ class PlayerRepositoryImpl : PlayerRepository {
             power = 80,
             month = "june",
             day = "20",
-            squad = listOf("Moroccan national team","Olympique Marseille"),
-            abilities = listOf("passing","dribbling","tackling","vision"),
+            squad = listOf("Moroccan national team", "Olympique Marseille"),
+            abilities = listOf("passing", "dribbling", "tackling", "vision"),
             playerTypes = listOf("Midfielder")
         )
     )
@@ -382,16 +382,16 @@ class PlayerRepositoryImpl : PlayerRepository {
     }
 
     private fun findPlayers(query: String?): List<Player> {
-        val founded = mutableListOf<Player>()
+        val found = mutableListOf<Player>()
         return if (!query.isNullOrEmpty()) {
             players.forEach { (_, players) ->
                 players.forEach { player ->
                     if (player.name.lowercase().contains(query.lowercase())) {
-                        founded.add(player)
+                        found.add(player)
                     }
                 }
             }
-            founded
+            found
         } else {
             emptyList()
         }
